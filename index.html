@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="milestone" content="Foster-Pet">
+  <link rel="icon" type="image/x-icon" href="assets/dog.png">
+  <!-- <script src="https://tinyurl.com/2p9w5adj"></script> -->
+  <title>Foster A Pet</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <p>Welcome to Lets foster a pet!</p>
+  </header>
+  <div id="the_title">
+    <h1>Sign Up to Foster a Pet</h1>
+  </div>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <td colspan="6">Available Pets</td>
+        </tr>
+        <tr>
+          <td>Pets</td>
+          <td>Type of Pets</td>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Gender</td>
+          <td>Breed</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img width="50" src="assets/goldenR.png" alt="The golden retriever"></td>
+          <td>Dog</td>
+          <td>Benny</td>
+          <td>2</td>
+          <td>Female</td>
+          <td>Golden Retriever</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/orange.png" alt="The golden retriever"></td>
+          <td>Cat</td>
+          <td>Felix</td>
+          <td>5</td>
+          <td>Male</td>
+          <td>Orange Tabby</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/german.png" alt="The golden retriever"></td>
+          <td>Dog</td>
+          <td>Cooper</td>
+          <td>8</td>
+          <td>Male</td>
+          <td>German Shepherd</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/dachshund.png" alt="The golden retriever"></td>
+          <td>Dog</td>
+          <td>Anna</td>
+          <td>3</td>
+          <td>Female</td>
+          <td>Long-Haired Dachshund</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/gray_cockatiel.png" alt="The gray Cocktiel Bird"></td>
+          <td>Bird</td>
+          <td>Chip</td>
+          <td>2</td>
+          <td>Male</td>
+          <td>Gray Cockatiel</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/turkish_angora.png" alt="The Turkish Angora cat"></td>
+          <td>Cat</td>
+          <td>Blizzard</td>
+          <td>5</td>
+          <td>Female</td>
+          <td>Turkish Angora</td>
+        </tr>
+        <tr>
+          <td><img width="50" src="assets/corgi.png" alt="The Corgi dog"></td>
+          <td>Dog</td>
+          <td>Mochi</td>
+          <td>2</td>
+          <td>Male</td>
+          <td>Corgi</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <img src="assets/dog.png" alt="Cute Dog Looking Over Form">
+  
+  <form action="thanks.html">
+    <h2 style="margin-bottom: 15px;">Want to foster a pet? Sign up now!</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" placeholder="Jane Doe" required>
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="example@domain.com" name="email" required>
+
+    <label for="pw">Password:</label>
+    <input type="password" id="pw" name="password" required>
+
+    <label for="num-pets">Number of Pets:</label>
+    <input type="number" min="0" id="num-pets" name="num-pets" required>
+
+    <!--Name attributes are important for radio-->
+    <h4>Have you fostered before?</h4>
+    <label for="yes"></label>
+    <input type="radio" id="yes" name="prev-experience"> Yes
+    <label for="no">
+      <input type="radio" id="no" name="prev-experience"> No
+    </label>
+
+    <h4>Which of these apply to your home?</h4>
+    <input type="checkbox" id="apartment" name="apartment">
+    <label for="apartment">Apartment</label>
+    <input type="checkbox" id="children" name="children"> 
+    <label for="children">Children</label><br>
+    <input type="checkbox" id="yard" name="yard">
+    <label for="yard">Yard</label>
+    <input type="checkbox" id="mansion" name="mansion">
+    <label for="mansion">Mansion</label>
+
+    <input type="submit" value="Sign Up!">
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
